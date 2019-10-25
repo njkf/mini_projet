@@ -48,7 +48,7 @@
             $distance_sans_pause = ((120-18)/60)*90; //distance parcourue sans l'acceleration et le freinage = 153km
             $distance_avec_pause = $distance_sans_pause + $distance_accel_frein; //distance parcourue en 2h de route + 15 min de pause = 168km
 
-            while ($distance_restante > 0) {  //donne pas la bonne réponse je sais pas pourquoi, j'ai tout réécris 2 fois 
+            while ($distance_restante > 0) {  
                 if ($distance_restante == $distance_avec_pause) {
                     $temps_total += 120;
                     $distance_restante -= $distance_avec_pause;     
